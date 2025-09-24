@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete do Bairro - Cardápio Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🍔 Lanchonete do Bairro</h1>
+            <p class="subtitle">Sabor caseiro, qualidade garantida!</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Seção de Busca e Filtros -->
+            <section class="search-section">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Buscar item no cardápio..." class="search-input">
+                    <button id="searchBtn" class="search-btn">🔍</button>
+                </div>
+                
+                <div class="filter-container">
+                    <button class="filter-btn active" data-categoria="">Todos</button>
+                    <button class="filter-btn" data-categoria="lanches">Lanches</button>
+                    <button class="filter-btn" data-categoria="bebidas">Bebidas</button>
+                    <button class="filter-btn" data-categoria="doces">Doces</button>
+                </div>
+            </section>
+
+            <!-- Seção do Cardápio -->
+            <section class="menu-section">
+                <h2 class="section-title">Nosso Cardápio</h2>
+                <div id="menuContainer" class="menu-container">
+                    <!-- Itens do cardápio serão inseridos aqui via JavaScript -->
+                </div>
+            </section>
+
+            <!-- Seção do Carrinho -->
+            <section class="cart-section">
+                <div class="cart-header">
+                    <h2 class="section-title">Carrinho de Compras</h2>
+                    <button id="toggleCart" class="toggle-cart-btn">
+                        <span id="cartCount" class="cart-count">0</span>
+                        🛒
+                    </button>
+                </div>
+                
+                <div id="cartContainer" class="cart-container hidden">
+                    <div id="cartItems" class="cart-items">
+                        <!-- Itens do carrinho serão inseridos aqui via JavaScript -->
+                    </div>
+                    
+                    <div class="cart-total">
+                        <strong>Total: R$ <span id="cartTotal">0,00</span></strong>
+                    </div>
+                    
+                    <button id="checkoutBtn" class="checkout-btn" disabled>Finalizar Pedido</button>
+                </div>
+            </section>
+
+            <!-- Modal de Finalização do Pedido -->
+            <div id="checkoutModal" class="modal hidden">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Finalizar Pedido</h3>
+                        <button id="closeModal" class="close-btn">&times;</button>
+                    </div>
+                    
+                    <form id="checkoutForm" class="checkout-form">
+                        <div class="form-group">
+                            <label for="customerName">Nome do Cliente *</label>
+                            <input type="text" id="customerName" name="customerName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="observations">Observações</label>
+                            <textarea id="observations" name="observations" rows="3" placeholder="Alguma observação especial para seu pedido?"></textarea>
+                        </div>
+                        
+                        <div class="order-summary">
+                            <h4>Resumo do Pedido:</h4>
+                            <div id="orderSummary" class="order-items">
+                                <!-- Resumo será inserido aqui -->
+                            </div>
+                            <div class="order-total">
+                                <strong>Total: R$ <span id="orderTotal">0,00</span></strong>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" id="cancelOrder" class="cancel-btn">Cancelar</button>
+                            <button type="submit" class="submit-btn">Enviar Pedido</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mensagens de Feedback -->
+    <div id="messageContainer" class="message-container"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Lanchonete do Bairro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
