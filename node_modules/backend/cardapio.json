@@ -1,0 +1,114 @@
+{
+  "lanches": [
+    {
+      "id": 1,
+      "nome": "X-Burger",
+      "categoria": "lanches",
+      "preco": 15.90,
+      "descricao": "Hambúrguer, queijo, alface, tomate e molho especial"
+    },
+    {
+      "id": 2,
+      "nome": "X-Bacon",
+      "categoria": "lanches",
+      "preco": 18.90,
+      "descricao": "Hambúrguer, bacon, queijo, alface, tomate e molho especial"
+    },
+    {
+      "id": 3,
+      "nome": "X-Tudo",
+      "categoria": "lanches",
+      "preco": 22.90,
+      "descricao": "Hambúrguer duplo, bacon, queijo, ovo, alface, tomate e molho especial"
+    },
+    {
+      "id": 4,
+      "nome": "Misto Quente",
+      "categoria": "lanches",
+      "preco": 8.90,
+      "descricao": "Pão de forma, presunto e queijo"
+    },
+    {
+      "id": 5,
+      "nome": "Bauru",
+      "categoria": "lanches",
+      "preco": 12.90,
+      "descricao": "Pão francês, presunto, queijo, tomate e orégano"
+    }
+  ],
+  "bebidas": [
+    {
+      "id": 6,
+      "nome": "Coca-Cola 350ml",
+      "categoria": "bebidas",
+      "preco": 4.50,
+      "descricao": "Refrigerante de cola gelado"
+    },
+    {
+      "id": 7,
+      "nome": "Guaraná Antarctica 350ml",
+      "categoria": "bebidas",
+      "preco": 4.50,
+      "descricao": "Refrigerante de guaraná gelado"
+    },
+    {
+      "id": 8,
+      "nome": "Suco de Laranja 300ml",
+      "categoria": "bebidas",
+      "preco": 6.00,
+      "descricao": "Suco natural de laranja"
+    },
+    {
+      "id": 9,
+      "nome": "Água Mineral 500ml",
+      "categoria": "bebidas",
+      "preco": 2.50,
+      "descricao": "Água mineral sem gás"
+    },
+    {
+      "id": 10,
+      "nome": "Café Expresso",
+      "categoria": "bebidas",
+      "preco": 3.00,
+      "descricao": "Café expresso tradicional"
+    }
+  ],
+  "doces": [
+    {
+      "id": 11,
+      "nome": "Pudim de Leite",
+      "categoria": "doces",
+      "preco": 7.50,
+      "descricao": "Pudim caseiro com calda de caramelo"
+    },
+    {
+      "id": 12,
+      "nome": "Brigadeiro",
+      "categoria": "doces",
+      "preco": 2.50,
+      "descricao": "Brigadeiro gourmet com granulado"
+    },
+    {
+      "id": 13,
+      "nome": "Beijinho",
+      "categoria": "doces",
+      "preco": 2.50,
+      "descricao": "Beijinho gourmet com coco"
+    },
+    {
+      "id": 14,
+      "nome": "Torta de Chocolate",
+      "categoria": "doces",
+      "preco": 9.90,
+      "descricao": "Fatia de torta de chocolate com cobertura"
+    },
+    {
+      "id": 15,
+      "nome": "Sorvete 2 Bolas",
+      "categoria": "doces",
+      "preco": 8.50,
+      "descricao": "Duas bolas de sorvete sabores variados"
+    }
+  ]
+}
+

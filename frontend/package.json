@@ -1,0 +1,25 @@
+{
+  "name": "cardapio-lanchonete-frontend",
+  "version": "1.0.0",
+  "description": "Frontend da aplicação de cardápio da lanchonete",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8080 -o",
+    "dev": "npx live-server --port=8080 --open=/index.html",
+    "build": "echo 'No build process needed for vanilla JS'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "cardapio",
+    "lanchonete",
+    "frontend",
+    "vanilla-js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {}
+}
